@@ -65,7 +65,16 @@ public class Program {
 		}
 		
 		// Le code dessous retourne true car (2 == 2) = true
-		System.out.println("Deuxieme test contains: " + gradeList.contains(2));	
+		System.out.println("Deuxieme test contains: " + gradeList.contains(2));
+		
+		// Pour vérifier si un object est contenu dans une liste il faut donc créer l'objet en dehors de la liste et l'ajouter ensuite.
+		List<Student> test = new ArrayList<Student>();
+		
+		Student studentTest = new Student("Brian",1,2);
+		
+		test.add(studentTest);
+		
+		System.out.println(test.contains(studentTest));
 		
 		//-----------------------------------------------------------------------------------------------
 		
@@ -131,6 +140,7 @@ public class Program {
 				}	
 		
 		//-----------------------------------------------------------------------------------------------
+				
 	}
 
 }
