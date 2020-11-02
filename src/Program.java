@@ -14,13 +14,13 @@ public class Program {
 		// Initialization
 		List<Student> studentList = new ArrayList<Student>(); // Il est mieux de préciser que c'est une liste dans le nom
 		List<Integer> gradeList = new ArrayList<Integer>();
+		List<Teacher> teacherList = new ArrayList<Teacher>();
 		
+		// Ajouts d'éléments
 		gradeList.add(1);
 		gradeList.add(2);
 		gradeList.add(3);
 		gradeList.add(4);
-		
-		List<Teacher> teacherList = new ArrayList<Teacher>();
 		
 		teacherList.add(new Teacher("Bob", 30));
 		teacherList.add(new Teacher("Franck", 30));
@@ -64,7 +64,7 @@ public class Program {
 			System.out.println("false");
 		}
 		
-		// Le code dessous retourne true car 2 == 2 = true
+		// Le code dessous retourne true car (2 == 2) = true
 		System.out.println("Deuxieme test contains: " + gradeList.contains(2));	
 		
 		//-----------------------------------------------------------------------------------------------
@@ -88,8 +88,8 @@ public class Program {
 		// studentArray = studentList.toArray(studentArray);
 		
 		// La bonne manière est la suivante:
-		Student[] studentArray = new Student[studentList.size()];
-		studentArray = studentList.toArray(studentArray);
+		Student[] studentArray = new Student[studentList.size()];	// Permet d'avoir la même taille que la liste
+		studentArray = studentList.toArray(studentArray);			// Convertir la liste en tableau
 		
 		//-----------------------------------------------------------------------------------------------
 		

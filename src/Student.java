@@ -1,4 +1,4 @@
-public class Student implements Comparable<Student> {
+public class Student implements Comparable<Student> { // Pas oublier d'implémenter l'interface Comparable
 	public String name;
 	public int age;
 	public int grade;
